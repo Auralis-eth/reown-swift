@@ -11,7 +11,6 @@ var dependencies: [Package.Dependency] = [
     .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.3.0"),
     .package(url: "https://github.com/WalletConnect/QRCode", from: "14.3.1"),
     .package(name: "CoinbaseWalletSDK", url: "https://github.com/MobileWalletProtocol/wallet-mobile-sdk", .upToNextMinor(from: "1.0.0")),
-//    .package(url: "https://github.com/pointfreeco/swift-snapshot-testing", .upToNextMinor(from: "1.10.0")),
 ]
 
 
@@ -223,20 +222,6 @@ let package = Package(
         .testTarget(
             name: "EventsTests",
             dependencies: ["Events"]),
-//        .testTarget(
-//            name: "ReownAppKitTests",
-//            dependencies: [
-//                "ReownAppKit",
-//                .product(name: "SnapshotTesting", package: "swift-snapshot-testing")
-//            ]
-//        ),
-//        .testTarget(
-//            name: "ReownAppKitUITests",
-//            dependencies: [
-//                "ReownAppKitUI",
-//                .product(name: "SnapshotTesting", package: "swift-snapshot-testing")
-//            ]
-//        )
     ],
     swiftLanguageVersions: [.v5]
 )
