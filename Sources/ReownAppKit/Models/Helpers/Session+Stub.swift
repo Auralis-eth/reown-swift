@@ -11,7 +11,7 @@ extension Session {
         "redirect": {
           "native": "metamask://",
           "universal": "https://metamask.app.link/",
-          "linkMode: false
+          "linkMode": false
         },
         "description": "MetaMask Wallet Integration"
       },
